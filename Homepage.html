@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Indigo- Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="casc.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Rock+Salt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .myfont1{font-family: 'Rock Salt', cursive;}
+
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#"><img src="img/logo 4.png" width="200px" height="100px" style="border-right: thin #657CD3; "></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav float-right">
+      <li class="nav-item clr1 clr1con active  kli"><a class="nav-link" href="Homepage.html">Home</a></li>
+        <li class="nav-item dropdown clr1  kli">
+         <a class="nav-link " data-toggle="dropdown" href="Shop product.html">Shop</a>
+         <div class="dropdown-menu">
+         <a class="dropdown-item" href="Shop product.html">Product</a>
+         <a class="dropdown-item" href="Shop cart.html">Confirm Order</a>
+         <a class="dropdown-item" href="Shop checkout.html">Check Out</a>
+         </div>
+        </li>
+
+      <li class="nav-item clr1 kli"><a class="nav-link" href="Contact Us.html">Contact</a></li>
+
+<!-- To move -->
+      <li class="nav-item clr1 kli">
+          <a class="nav-link text-center" data-toggle="modal" data-target="#myModal">Register<br><i class="fas fa-user-plus" style="color:#657CD3;"></i></a>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header" style="background-color: lightgray;">
+          <h2 class="modal-title"><span style="color:#657CD3; "> R</span>egister Here</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="/action_page.php" class="need-validation" novalidate>
+  <div class="form-group">
+    <label for="unname"><h4>Name</h4></label>
+    <input type="text" class="form-control mb-2" placeholder="First">
+    <input type="text" class="form-control mb-2" placeholder="Last">
+    <div class="valid-feedback"><i class="far fa-check-circle" style="color: lawngreen;"></i></div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+
+    <label for="uname"><h4>Username:</h4></label>
+    <input type="text" class="form-control mb-2" id="uname" placeholder="Enter username" name="uname" required>
+    <div class="valid-feedback"><i class="far fa-check-circle" style="color: lawngreen;"></i></div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+      <div class="form-group">
+    <label for="email"><h4>Phone:</h4></label>
+    <input type="email" class="form-control mb-2" id="pwd" placeholder="Email Address" name="email" required>
+    <div class="valid-feedback"><i class="far fa-check-circle" style="color: lawngreen;"></i></div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+   </div>
+
+
+  <div class="form-group">
+    <label for="pwd"><h4>Password:</h4></label>
+    <input type="password" class="form-control mb-2" id="pwd" placeholder="Enter password" name="pswd" required>
+    <input type="password" class="form-control mb-2" id="pwd" placeholder="Confirm password" name="pswd" required>
+    <div class="valid-feedback"><i class="far fa-check-circle" style="color: lawngreen;"></i></div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+   <div class="form-group">
+    <label for="pwd"><h4>Phone:</h4></label>
+    <input type="tel" class="form-control mb-2" id="pwd" placeholder="### ##### ##" name="phn" required>
+    <div class="valid-feedback"><i class="far fa-check-circle" style="color: lawngreen;"></i></div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+   </div>
+
+
+    <div class="form-group">
+    <label for="unname"><h4>Address</h4></label>
+    <textarea class="form-inline" name="adr"></textarea>
+       <div class="valid-feedback"><i class="far fa-check-circle" style="color: lawngreen;"></i></div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
+
+  <div class="form-group form-check">
+    <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+    <label class="custom-control-label" for="customCheck">I agree on <a href="#">Terms and Conditions</a></label>
+  </div>
+    </label>
+      </div>
+</form>
+
+
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="buttonsht" data-dismiss="modal">Register</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      </li>
+  </ul>
+
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search">
+  <div class="input-group-append">
+    <button class="btn btn-outline-light " type="submit"><i class="fas fa-search" style="color:#657CD3; "></i></button>
+  </div>
+</div>
+
+</nav>
+
+<div id="apple">
+    <div class="container">
+    <div class="row">
+
+        <div class="col-sm-4"><i class="fas fa-shipping-fast op" style="color: gray; font-size: 30px;"></i><h6 >Free shipping on order upto $50</h6></div>
+
+        <div class="col-sm-4"><i class="fas fa-gift op" style="color: gray; font-size: 30px;"></i><h6>20% Student Discount</h6></div>
+
+        <div class="col-sm-4"><i class="fas fa-tags op" style="color: gray; font-size: 30px;"></i><h6>30% off on dresses. Use code: 30OFF</h6></div>
+
+    </div>
+    </div>
+
+</div>
+
+
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+
+
+  <div class="carousel-inner">
+    <div class="carousel-item ">
+      <img src="img/assorted-clothes-996329.jpg"alt="Los Angeles" width="1500px" height="600px">
+        <div class="carousel-caption">
+        <p class="a1 myfont1">Winter Arrivals</p>
+        <h1 class="a1 myfont1">2019</h1>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/close-up-of-row-325876.jpg" alt="New York"  width="1500px" height="600px">
+        <div class="carousel-caption">
+        <p class="a1 myfont1">Winter Arrivals</p>
+        <h1 class="a1 myfont1">2019</h1>
+        </div>
+    </div>
+
+      <div class="carousel-item active">
+      <img src="img/assorted-cloth-lot-1336873.jpg" alt="New York"  width="1500px" height="600px">
+          <div class="carousel-caption">
+        <p class="a1 myfont1">Winter Arrivals</p>
+        <h1 class="a1 myfont1">2019</h1>
+        </div>
+    </div>
+</div>
+
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span><i class="fas fa-chevron-circle-right" style="color:darkgray; font-size:60px;"></i></span>
+  </a>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="row a2">
+
+    <div class="col-md-4">
+    <center><i class="fas fa-shipping-fast" style="color:grey; font-size: 70px;"></i>
+    <h3>Free shipping</h3></center>
+    </div>
+
+    <div class="col-md-4">
+    <center><i class="fas fa-hand-holding-usd" style="color:grey; font-size: 70px;"></i>
+    <h3>100% Money back</h3></center>
+    </div>
+
+    <div class="col-md-4">
+    <center><i class="fas fa-headset" style="color:grey; font-size: 70px;"></i>
+    <h3>Online support 24/7</h3></center>
+    </div>
+
+</div>
+</div>
+
+<div class="a7">
+<div class="a6">
+
+<p><span style="color:#657CD3; ">L</span>atest <span style="color:#657CD3; ">P</span>roducts</p>
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item"><a class="nav-link" >All</a></li>
+    <li class="nav-item"><a class="nav-link">Dresses</a></li>
+    <li class="nav-item"><a class="nav-link" >Shoes</a></li>
+    <li class="nav-item"><a class="nav-link">Accesories</a> </li>
+  </ul>
+    </div>
+<div class="row a5">
+
+    <div class="col-sm-3 lft-bdr">
+      <img class="card-img-bottom" src="img/portrait-young-guy-with-coat_23-2148248487.jpg" alt="Card image" style="width:100%;   height: 300px;">
+      <h5 >Coat with Turtle Neck <br> Grey & Brown</h5>
+      <h4 class="text-left">$69.99</h4>
+      <a href="#" class="btn btn-success btn-sm float-left">Buy Now</a>
+    </div>
+
+    <div class="col-sm-3 ">
+      <img class="card-img-bottom" src="img/beautiful-blonde-hat-scarf_144627-613.jpg" alt="Card image" style="width:100%;   height: 300px;">
+      <h5 >Hat and Muffler Scarf <br> Mustard </h5>
+      <h4 class="text-left">$14.90</h4>
+      <a href="#" class="btn btn-success btn-sm float-left">Buy Now</a>
+    </div>
+
+    <div class="col-sm-3 ">
+      <img class="card-img-bottom" src="img/handsome-man-leather-jacket_144627-3574.jpg" alt="Card image" style="width:100%;   height: 300px;">
+      <h5 >Leather Jacket <br> Black</h5>
+      <h4 class="text-left">$49.99</h4>
+      <a href="#" class="btn btn-success btn-sm float-left">Buy Now</a>
+    </div>
+
+    <div class="col-sm-3 rgt-bdr">
+      <img class="card-img-bottom" src="img/fashion-portrait-young-elegant-woman_1328-2671.jpg" alt="Card image" style="width:100%;   height: 300px;">
+      <h5 >Dress  <br> White</h5>
+      <h4 class="text-left">$99.99</h4>
+      <a href="#" class="btn btn-success btn-sm float-left">Buy Now</a>
+
+    </div>
+
+</div>
+
+
+<div class="row a5">
+
+    <div class="col-sm-3 lft-bdr">
+      <img class="card-img-bottom" src="img/1.jpg" alt="Card image" style="width:100%;   height: 300px;">
+      <h5 >Sneakers <br> Blue</h5>
+      <h4 class="text-left">$49.99</h4>
+      <a href="#" class="btn btn-success btn-sm float-left">Buy Now</a>
+    </div>
+
+    <div class="col-sm-3 ">
+      <img class="card-img-bottom" src="img/banter-snaps-jC7nVH_Sw8k-unsplash.jpg" alt="Card image" style="width:100%;   height: 300px;">
+      <h5 >Pants- Men <br> Baige </h5>
+      <h4 class="text-left">$44.90</h4>
+      <a href="#" class="btn btn-success btn-sm float-left">Buy Now</a>
+    </div>
+
+    <div class="col-sm-3 ">
+      <img class="card-img-bottom" src="img/denny-muller-PTInh1bi4ik-unsplash.jpg" alt="Card image" style="width:100%;   height: 300px;">
+      <h5 >Pair of rings <br>Silver</h5>
+      <h4 class="text-left">$19.90</h4>
+      <a href="#" class="btn btn-success btn-sm float-left">Buy Now</a>
+    </div>
+
+    <div class="col-sm-3 rgt-bdr">
+      <img class="card-img-bottom" src="img/elegant-woman-costume-hat-with-handbag-room_23-2148068414.jpg" alt="Card image" style="width:100%;   height: 300px;">
+      <h5 >Leather Handbag<br> Black</h5>
+      <h4 class="text-left">$78.49</h4>
+      <a href="#" class="btn btn-success btn-sm float-left">Buy Now</a>
+
+    </div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+
+    <div class="col-sm-4 a5">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+
+
+    </ul>
+
+
+       <div class="carousel-inner">
+       <div class="carousel-item active">
+       <img src="img/person-holding-pair-of-brown-nike-sneakers-1476209.jpg"alt="Los Angeles" width="500px" height="620px">
+       <div class="carousel-caption a2 myfont1">
+       <h3>Trend</h3>
+       <h1>Footwear Colletions</h1>
+       <h2>2019 Party</h2>
+       </div>
+       </div>
+
+
+       <div class="carousel-item">
+       <img src="img/woman-sitting-on-ground-1202518.jpg" alt="Los Angeles" width="500px" height="620px">
+       <div class="carousel-caption a2 myfont1">
+       <h3>Trend</h3>
+       <h1>Footwear Colletions</h1>
+       <h2>2019 Party</h2>
+       </div>
+       </div>
+
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+   <div class="col-sm-8 a5">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+
+
+    </ul>
+
+
+       <div class="carousel-inner">
+       <div class="carousel-item active">
+       <img src="img/man-in-brown-robe-carrying-bag-smiling-837129.jpg" alt="Los Angeles" width="1500px" height="1200px">
+       <div class="carousel-caption a3 myfont1">
+       <h3>Trend</h3>
+       <h1>Winter Colletions</h1>
+       <h2>2019 Party</h2>
+       </div>
+       </div>
+
+
+       <div class="carousel-item">
+       <img src="img/woman-wearing-white-turtle-neck-sweater-709802.jpg" alt="Los Angeles" width="700px" height="1200px">
+       <div class="carousel-caption a3 myfont1">
+       <h3>Trend</h3>
+       <h1 >Winter Colletions</h1>
+       <h2>2019 Party</h2>
+       </div>
+       </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+<div class="row">
+
+     <div class="col-sm-4 a4">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+
+
+    </ul>
+
+
+       <div class="carousel-inner">
+       <div class="carousel-item active">
+       <img src="img/man-wearing-fedora-hat-1687719.jpg" alt="Los Angeles" width="400px" height="550px">
+       <div class="carousel-caption  myfont1">
+       <h3>Trend</h3>
+       <h1>Accesories</h1>
+       <h2>2019 Party</h2>
+       </div>
+       </div>
+
+
+       <div class="carousel-item">
+       <img src="img/women-s-black-long-sleeved-shirt-with-white-polka-dots-1021693.jpg" alt="Los Angeles" width="400px" height="550px">
+       <div class="carousel-caption  myfont1">
+       <h3>Trend</h3>
+       <h1>Accesories </h1>
+       <h2>2019 Party</h2>
+       </div>
+       </div>
+
+    </div>
+    </div>
+    </div>
+
+
+</div>
+</div>
+
+
+<div class="a7">
+<div class="row">
+<div class="col-sm-6">
+ <h1 class="text-left">2019 <br><b>#WinterCollection </b> </h1>
+ <p class="text-left text-justify" >Fusce urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin nulla non leo viverra scelerisque. Phasellus facilisis lobortis metus, sit amet viverra lectus finibus ac. Aenean non felis dapibus, placerat libero auctor, ornare ante. Morbi quis ex eleifend, sodales nulla vitae, scelerisque ante. Nunc id vulputate dui. Suspendisse consectetur rutrum metus nec scelerisque. s Fusce urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin nulla non leo viverra scelerisque. Phasellus facilisis lobortis metus, sit amet viverra lectus finibus ac. Aenean non felis dapibus, placerat libero auctor, ornare ante. Morbi quis ex eleifend, sodales nulla vitae, scelerisque ante. Nunc id vulputate dui. Suspendisse consectetur rutrum metus nec scelerisque. s Fusce urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vestibulum malesuada aliquet libero viverra cursus. Aliquam erat volutpat. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. Sed sollicitudin nulla non leo viverra scelerisque. Phasellus facilisis lobortis metus, sit amet viverra lectus finibus ac. Aenean non felis dapibus, placerat libero auctor, ornare ante. Morbi quis ex eleifend, sodales nulla vitae, scelerisque ante. Nunc id vulputate dui. Suspendisse consectetur rutrum metus nec scelerisque. s</p>
+</div>
+
+ <div class="col-sm-6">
+    <img src="img/photography-of-a-woman-sitting-on-chair-1070030.jpg" width="500px:" height="700px">
+ </div>
+</div>
+</div>
+
+
+<footer>
+        <div class="container">
+            <div class="input-group mb-3 a8">
+  <input type="email" class="form-control input-group-lg" placeholder="Type your E-mail Address Here">
+  <div class="input-group-append">
+    <button class="btn btn-info" type="submit">Subscribe to Our Newsletter</button>
+  </div>
+</div>
+            <div class="footer-widget">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>About us</h4><br>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Community</li>
+                                <li>Jobs</li>
+                                <li>Shipping</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Customer Care</h4><br>
+                            <ul>
+                                <li>Search</li>
+                                <li>Privacy Policy</li>
+                                <li>2019 Lookbook</li>
+                                <li>Shipping & Delivery</li>
+                                <li>Gallery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Our Services</h4><br>
+                            <ul>
+                                <li>Free Shipping</li>
+                                <li>Free Returnes</li>
+                                <li>Our Franchising</li>
+                                <li>Terms and conditions</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h4>Information</h4><br>
+                            <ul>
+                                <li>Payment methods</li>
+                                <li>Times and shipping costs</li>
+                                <li>Product Returns</li>
+                                <li>Shipping methods</li>
+                                <li>Conformity of the products</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
